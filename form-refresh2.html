@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/form-refresh.js"></script>
+</head>
+<body>
+<form id="test">
+    <input type="text" name="sansa" value=""/>
+
+    <input name="_token" type="hidden" value="11">
+
+    <div class="col-xs-8 shuaidan-radio">
+        <label class="kh-gentle">
+            <input id="kh-male" checked="checked" name="customer_sex" type="radio" value="1"> 先生
+        </label>
+        <label class="kh-gentle">
+            <input name="customer_sex" type="radio" value="0"> 女士
+        </label>
+    </div>
+
+    <div class="col-xs-8 shuaidan-radio">
+        <label for="ownership-self">
+            <input checked="checked" name="house_ownership[]" type="checkbox" value="1"> 本人
+        </label>
+        <label for="ownership-self">
+            <input name="house_ownership[]" type="checkbox" value="2"> 配偶
+        </label>
+        <label for="ownership-self">
+            <input name="house_ownership[]" type="checkbox" value="3"> 父母
+        </label>
+        <label for="ownership-self">
+            <input name="house_ownership[]" type="checkbox" value="4"> 子女
+        </label>
+    </div>
+
+    <textarea id="shuaidanNote" cols="21" rows="4" name="otherinfo"></textarea>
+
+
+    <input type="submit" name="ok" value="提交"/>
+</form>
+
+</body>
+</html>
